@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px;
+}
+
+.wrapper>h1 {
+    padding-left: 30px;
+    animation: myfirst 3s linear 3s infinite;
+    color: yellow
+}
+
+.wrapper i {
+    position: relative;
+    top: 50px;
+    left: 40%;
+    animation: myfirst 3s linear 1s infinite;
+    color: yellow
+}
+
+@keyframes myfirst {
+    0% {
+        color: red;
+        transform: rotate(0deg) scale(0);
+    }
+
+    100% {
+        color: blue;
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.masin {
+    border-bottom: 5px solid blueviolet;
+    position: relative;
+}
+
+.masin>.i {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+   position: absolute;
+   bottom: 0;
+   animation-name: car;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes car {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
